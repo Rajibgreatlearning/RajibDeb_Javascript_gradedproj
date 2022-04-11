@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+
+<body>
+    <div id="box">
+        <div class="wrapper">
+            <header id="header">To-Do List App</header>
+            <div class="inputField">
+                <input type="text" placeholder="Add ToDo" id="toDoInput">
+                <button id="addBtn">Add</button>
+
+            </div>
+        </div>
+        <ul class="toDoList">
+            <!--data comes from local storage-->
+            <!--Code is present in the Logic.js-->
+
+        </ul>
+        <div class="footer">
+            <span>You have total <span id="pending-task"></span> task pending</span>
+            <button id="clearAll">Clear All</button>
+        </div>
+    </div>
+</body>
+<script src="Logic.js"></script>
+
+</html>

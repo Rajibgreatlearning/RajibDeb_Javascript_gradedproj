@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom,#68EACC, #497be8);
+}
+
+#box{
+    margin: 120px auto;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+
+}
+
+
+#header {
+    /* font-size: 2em; */
+    font-size: 30px;
+    color: blue;
+    padding-bottom: .3em; 
+    font-weight: bold;
+   
+}
+
+.inputField{
+    display: flex;
+    height: 40px; 
+    /* width: 400px; */
+    margin: 20px 0;
+}
+
+.inputField input:hover{
+    background-color: #ccc;
+}
+
+.inputField input{
+    width: 80%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 7px;
+    padding-left: 15px;
+    /* border: none; */
+    outline: none;
+    margin-right: 4px;
+    justify-content: space-between;
+}
+
+
+#addBtn{
+    background-color: #8e49e8;
+    color: aliceblue;
+    width: 6em;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.toDoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor:default;
+    overflow: hidden;
+}
+
+.toDoList li:hover{
+    background-color: #ccc;
+
+}
+
+.toDoList li:hover #delete,.toDoList li:hover #edit{
+    display: block;
+}
+
+
+
+#delete{
+   display: none;
+    padding: .5em;
+    background-color: rgb(221, 53, 31);
+    color: aliceblue; 
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    margin-top: 8px;          
+    outline: none;
+    border:none;
+}
+
+.listElements #edit{
+    display: none;
+    padding: .5em;
+    background-color: rgb(14, 131, 63);
+    color: aliceblue; 
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    margin-left: 3px;
+    margin-top: 8px;
+    outline: none;
+    border: none;
+}
+
+#box .footer{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   margin-top: 25px;
+   justify-content: space-between;
+}
+
+.footer #clearAll{
+    background-color: #c7c56d;
+    color: rgb(9, 16, 22);
+    width: 5em;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    /* font-weight: bold; */
+    font-size: medium;
+    cursor: pointer;
+
+}
